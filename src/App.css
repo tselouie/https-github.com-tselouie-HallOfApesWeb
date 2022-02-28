@@ -1,0 +1,117 @@
+:root {
+  --color-purple:  #7a18ec;
+  --color-purple-secondary:#9F84B6;
+  --color-purple-tetriary:#FDE9FF;
+  --color-green-spot:#62BAAC;
+}
+
+img.circle {
+  border-radius: 50%;
+}
+.mainContainer {
+  /* display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 64px;  
+  background-color: black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: solid 3px white;
+  border-bottom: solid 3px white; */
+  scroll-snap-type: y mandatory;
+  overflow-y:scroll;
+  height:100vh;
+  transition:ease 1s;
+}
+.center { 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;}
+
+.dataContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+  align-items: center;
+
+  color: white;
+}
+
+.header {
+  text-align: center;
+  justify-content: center;
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.bio {
+  text-align: center;
+  color: gray;
+  margin-top: 16px;
+}
+
+
+.connBtn {
+  position: relative;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-white);
+  transition: 0.5s;
+  border: 1px solid var(--color-purple);
+  padding: .5rem;
+  border-radius: 5px;
+  
+}
+.connBtn:hover {
+  border: 1px solid transparent;
+  background: var(--color-purple); 
+  cursor: pointer;
+}
+
+.landing,
+.connect-wallet,
+.mint-nft,
+.member-page {
+  flex-direction: column;
+  width: 960px;
+  max-width: calc(100% - 1rem);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin: auto;
+  align-content: center;
+  display: flex;
+  text-align: center;
+}
+
+section {
+  height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align:start;
+}
+.two {
+  background:var(--color-purple-secondary);
+}
+
+.three {
+  background:var(--color-purple-tetriary);
+  display:flex;
+  text-align: center;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+}
+.roadMap{
+  width:75vw;
+  min-height:40vh;
+}
+.collectionTitle{
+  margin-bottom:1rem;
+  font-size: 2em;
+}
+
